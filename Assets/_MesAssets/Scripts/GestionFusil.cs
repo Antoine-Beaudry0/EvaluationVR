@@ -1,53 +1,38 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class GestionFusil : MonoBehaviour
 {
-    public float quantiteDegats = 10f;
 
-    public float distance = 100f;
+    public float domage = 10f;
+    public float range = 100f;
 
-    public Camera cameraJoueur;
+    public Camera fpsCam;
+    [SerializeField] private InputActionAsset _actionAsset = default;
 
-    private InputAction actionTir;
-
-    [SerializeField]Ray rayon = new Ray();
-
-    private void Start()
+    void Update()
     {
-        InitialiserActionTir();
+
+        var fireAction = _actionAsset.FindAction("Fire");
+        fireAction.performed += Shoot;
+        fireAction.Enable();
+
     }
 
-    private void InitialiserActionTir()
+    void Shoot(InputAction.CallbackContext obj)
     {
-        actionTir = new InputAction("Tir", binding: "<Mouse>/leftButton");
-        actionTir.performed += context => EffectuerTir();
-        actionTir.Enable();
-    }
-
-    private void EffectuerTir()
-    {
-        RaycastHit infoImpact;
-        Vector3 origineTir = cameraJoueur.transform.position;
-        Vector3 directionTir = cameraJoueur.transform.forward;
-
-        bool aToucheCible = Physics.Raycast(origineTir, directionTir, out infoImpact, distance);
-
-        if (aToucheCible)
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            GererImpact(infoImpact);
+            Debug.Log(hit.transform.name);
+
+            Cible cible = hit.transform.GetComponent<Cible>();
+            if (cible != null)
+            {
+                cible.RecevoirDegats(domage);
+            }
         }
     }
 
-    private void GererImpact(RaycastHit infoImpact)
-    {
-        Debug.Log(infoImpact.transform.name);
-
-        Cible cibleTouchee = infoImpact.transform.GetComponent<Cible>();
-
-        if (cibleTouchee != null)
-        {
-            cibleTouchee.RecevoirDegats(quantiteDegats);
-        }
-    }
 }

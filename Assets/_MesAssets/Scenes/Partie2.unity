@@ -428,6 +428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 380369989}
+  - component: {fileID: 380369993}
   - component: {fileID: 380369992}
   - component: {fileID: 380369991}
   - component: {fileID: 380369990}
@@ -614,13 +615,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380369988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d083624f6a4ff4546aacbba6800ee49b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quantiteDegats: 10
   distance: 100
+  cameraJoueur: {fileID: 0}
+--- !u!114 &380369993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380369988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf9ea8743aebe44b9fec1ae3beeba06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  porteeRaycast: 100
   cameraJoueur: {fileID: 0}
 --- !u!1 &415545470 stripped
 GameObject:
@@ -3546,6 +3561,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c2604c8b25baa0041aea94a9712478c2, type: 3}
   m_PrefabInstance: {fileID: 2019445133}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2055556017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055556018}
+  m_Layer: 0
+  m_Name: RaycastSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2055556018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055556017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.0691, z: 0.1922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 660292765}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2082635673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,6 +5190,7 @@ GameObject:
   - component: {fileID: 2987558959794950106}
   - component: {fileID: 6038634504643713097}
   - component: {fileID: 6038634504643713098}
+  - component: {fileID: 6038634504643713099}
   m_Layer: 0
   m_Name: balloon.008
   m_TagString: Untagged
@@ -5875,6 +5922,19 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6038634504643713098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3689757526550508536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sante: 10
+--- !u!114 &6038634504643713099
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
