@@ -14,19 +14,19 @@ public class GestionFusil : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("CheckRaycast", 0f, 0.1f);
+        InvokeRepeating("CheckRaycast", 0f, 0.2f);
     }
 
     void CheckRaycast()
     {
         if (Physics.Raycast(raycastSpawnPoint.position, raycastSpawnPoint.forward, out frappe, 10f) && (boutton == true))
         {
-            Debug.Log("JE TIRE");
-
+            Debug.Log("Tag détecté: " + frappe.collider.tag);
             if (frappe.collider.tag == "Ballon")
             {
+                
+                Debug.Log("----------------------Atteint----------------");
                 Destroy(frappe.collider.gameObject);
-                Debug.Log("+1");
                 _son.Play();
             }
             boutton = false;
@@ -35,7 +35,6 @@ public class GestionFusil : MonoBehaviour
 
     public void Tirer()
     {
-        Debug.Log("J'appuie sur le bouton");
         boutton = true;
         Ray rayonTir = new Ray(raycastSpawnPoint.position, raycastSpawnPoint.forward);
         Debug.DrawRay(rayonTir.origin, rayonTir.direction * 10f, Color.red, 1f);

@@ -3836,7 +3836,7 @@ GameObject:
   - component: {fileID: 1568432447}
   m_Layer: 0
   m_Name: Ballons
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5080,7 +5080,6 @@ GameObject:
   - component: {fileID: 3334392797715715139}
   - component: {fileID: 3254571212406694477}
   - component: {fileID: 6238125872141554506}
-  - component: {fileID: 6238125872141554507}
   m_Layer: 0
   m_Name: balloon.009
   m_TagString: Ballon
@@ -5207,7 +5206,6 @@ GameObject:
   - component: {fileID: 9038839380015804240}
   - component: {fileID: 8152493115828924628}
   - component: {fileID: 4427016242343305415}
-  - component: {fileID: 9038839380015804241}
   m_Layer: 0
   m_Name: balloon.013
   m_TagString: Ballon
@@ -5453,7 +5451,6 @@ GameObject:
   - component: {fileID: 6391868361902093320}
   - component: {fileID: 1465317245413519611}
   - component: {fileID: 3477828419184173870}
-  - component: {fileID: 6391868361902093321}
   m_Layer: 0
   m_Name: balloon.001
   m_TagString: Ballon
@@ -5558,7 +5555,6 @@ GameObject:
   - component: {fileID: 381911226810843674}
   - component: {fileID: 394017243986606585}
   - component: {fileID: 2093093386197796167}
-  - component: {fileID: 2093093386197796168}
   m_Layer: 0
   m_Name: balloon.015
   m_TagString: Ballon
@@ -5707,19 +5703,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2093093386197796168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654672321195231134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!33 &2137194490382303895
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5739,7 +5722,6 @@ GameObject:
   - component: {fileID: 8127109265813148187}
   - component: {fileID: 2257589764523204622}
   - component: {fileID: 3931037811855794600}
-  - component: {fileID: 8127109265813148188}
   m_Layer: 0
   m_Name: balloon.007
   m_TagString: Ballon
@@ -6037,7 +6019,6 @@ GameObject:
   - component: {fileID: 7543939118229856479}
   - component: {fileID: 5705652024120755695}
   - component: {fileID: 8158107081303940866}
-  - component: {fileID: 8158107081303940867}
   m_Layer: 0
   m_Name: balloon.017
   m_TagString: Ballon
@@ -6279,7 +6260,6 @@ GameObject:
   - component: {fileID: 3864315044531482754}
   - component: {fileID: 2987558959794950106}
   - component: {fileID: 6038634504643713097}
-  - component: {fileID: 6038634504643713098}
   - component: {fileID: 6038634504643713099}
   m_Layer: 0
   m_Name: balloon.008
@@ -6653,7 +6633,6 @@ GameObject:
   - component: {fileID: 1069230291622468905}
   - component: {fileID: 5691731435395620186}
   - component: {fileID: 5462579677621910261}
-  - component: {fileID: 5691731435395620187}
   m_Layer: 0
   m_Name: balloon.014
   m_TagString: Ballon
@@ -6752,7 +6731,6 @@ GameObject:
   - component: {fileID: 8138891152546532670}
   - component: {fileID: 9163076090007782969}
   - component: {fileID: 7250963299466068371}
-  - component: {fileID: 9163076090007782970}
   m_Layer: 0
   m_Name: balloon.005
   m_TagString: Ballon
@@ -6910,19 +6888,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4924592651907976861}
   m_Mesh: {fileID: 786662639977673186, guid: 47be3ebad7149504dae0d41dbc797381, type: 3}
---- !u!114 &5691731435395620187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4924592651907976861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!33 &5705652024120755695
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6942,7 +6907,6 @@ GameObject:
   - component: {fileID: 6681545501984797774}
   - component: {fileID: 6247199119661171327}
   - component: {fileID: 3095268632997183307}
-  - component: {fileID: 6681545501984797775}
   m_Layer: 0
   m_Name: balloon.003
   m_TagString: Ballon
@@ -6961,7 +6925,6 @@ GameObject:
   - component: {fileID: 3677584892585142635}
   - component: {fileID: 2444185812801911693}
   - component: {fileID: 6162643970278736479}
-  - component: {fileID: 6162643970278736480}
   m_Layer: 0
   m_Name: balloon.004
   m_TagString: Ballon
@@ -7011,19 +6974,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6038634504643713098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3689757526550508536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!114 &6038634504643713099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7036,7 +6986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sante: 10
 --- !u!1 &6105366739239613903
 GameObject:
   m_ObjectHideFlags: 0
@@ -7232,19 +7181,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6162643970278736480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5923878267650863892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!23 &6238125872141554506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7287,19 +7223,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6238125872141554507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549676395372631245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!33 &6247199119661171327
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7352,7 +7275,6 @@ GameObject:
   - component: {fileID: 7167563261532894725}
   - component: {fileID: 2137194490382303895}
   - component: {fileID: 779552207002520913}
-  - component: {fileID: 7167563261532894726}
   m_Layer: 0
   m_Name: balloon.002
   m_TagString: Ballon
@@ -7375,19 +7297,6 @@ Transform:
   m_Father: {fileID: 1568432447}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6391868361902093321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429596080938409472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!1 &6455228725280147069
 GameObject:
   m_ObjectHideFlags: 0
@@ -7589,19 +7498,6 @@ Transform:
   m_Father: {fileID: 1568432447}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6681545501984797775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5860765987994407359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!4 &6734527987015487885
 Transform:
   m_ObjectHideFlags: 0
@@ -7727,7 +7623,6 @@ GameObject:
   - component: {fileID: 4471038697699035889}
   - component: {fileID: 6169619588129356}
   - component: {fileID: 7585443311311253164}
-  - component: {fileID: 7585443311311253165}
   m_Layer: 0
   m_Name: balloon.016
   m_TagString: Ballon
@@ -7746,7 +7641,6 @@ GameObject:
   - component: {fileID: 5162200398118329796}
   - component: {fileID: 5623205002743708512}
   - component: {fileID: 3556693614434149496}
-  - component: {fileID: 6968124028682969503}
   m_Layer: 0
   m_Name: balloon
   m_TagString: Ballon
@@ -7754,19 +7648,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6968124028682969503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6968124028682969502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!4 &7167563261532894725
 Transform:
   m_ObjectHideFlags: 0
@@ -7782,19 +7663,6 @@ Transform:
   m_Father: {fileID: 1568432447}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7167563261532894726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379843325551299997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!23 &7221494531560601154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7954,19 +7822,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7585443311311253165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6850969771211277900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!23 &7625630955685150958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8128,7 +7983,6 @@ GameObject:
   - component: {fileID: 8411244367121858973}
   - component: {fileID: 8908584343954541889}
   - component: {fileID: 8981403015385723711}
-  - component: {fileID: 8981403015385723712}
   m_Layer: 0
   m_Name: balloon.010
   m_TagString: Ballon
@@ -8147,7 +8001,6 @@ GameObject:
   - component: {fileID: 3896912691064146893}
   - component: {fileID: 7900148384628607114}
   - component: {fileID: 4586688466277066779}
-  - component: {fileID: 7935792370000987632}
   m_Layer: 0
   m_Name: balloon.006
   m_TagString: Ballon
@@ -8155,19 +8008,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7935792370000987632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935792370000987631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!23 &8092493905876933804
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8225,19 +8065,6 @@ Transform:
   m_Father: {fileID: 1568432447}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8127109265813148188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141924327579872507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!4 &8138891152546532670
 Transform:
   m_ObjectHideFlags: 0
@@ -8303,19 +8130,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8158107081303940867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3148946729811151371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!1001 &8351294020367685625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8419,7 +8233,6 @@ GameObject:
   - component: {fileID: 3779256040647454219}
   - component: {fileID: 740046265365477508}
   - component: {fileID: 408106055899246876}
-  - component: {fileID: 8417245379276897232}
   m_Layer: 0
   m_Name: balloon.011
   m_TagString: Ballon
@@ -8427,19 +8240,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8417245379276897232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8417245379276897231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!23 &8478279138585681454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8669,7 +8469,6 @@ GameObject:
   - component: {fileID: 6513684271024796007}
   - component: {fileID: 1781347774980163012}
   - component: {fileID: 4033603427259233906}
-  - component: {fileID: 8856732988294985528}
   m_Layer: 0
   m_Name: balloon.012
   m_TagString: Ballon
@@ -8677,19 +8476,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8856732988294985528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8856732988294985527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!33 &8908584343954541889
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8740,19 +8526,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8981403015385723712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7912625034495376187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!4 &9038839380015804240
 Transform:
   m_ObjectHideFlags: 0
@@ -8768,19 +8541,6 @@ Transform:
   m_Father: {fileID: 1568432447}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9038839380015804241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694721007805999470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
 --- !u!33 &9088254035938429339
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8797,16 +8557,3 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5307018322490306407}
   m_Mesh: {fileID: 3068594794338194788, guid: 47be3ebad7149504dae0d41dbc797381, type: 3}
---- !u!114 &9163076090007782970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5307018322490306407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90446a11a5284bc479aa3350d4aa2f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sante: 10
