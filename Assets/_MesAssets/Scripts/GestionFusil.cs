@@ -7,7 +7,7 @@ public class GestionFusil : MonoBehaviour
 {
     [SerializeField] public Transform raycastSpawnPoint;
     [SerializeField] private AudioSource _son = default;
-
+    public UITemps uiTemps;
     RaycastHit frappe;
 
     bool boutton = false;
@@ -21,11 +21,14 @@ public class GestionFusil : MonoBehaviour
             Debug.Log("Tag détecté: " + frappe.collider.tag);
             if (frappe.collider.tag == "Ballon")
             {
-                
                 Debug.Log("----------------------Atteint----------------");
                 Destroy(frappe.collider.gameObject);
                 _son.Play();
+
+                // Notifier le chronomètre
+                uiTemps.BallonEclate();
             }
+
             boutton = false;
         }
     }
