@@ -6,7 +6,9 @@ using UnityEngine.InputSystem;
 public class GestionFusil : MonoBehaviour
 {
     [SerializeField] public Transform raycastSpawnPoint;
-    [SerializeField] private AudioSource _son = default;
+    [SerializeField] private AudioSource _sonBallonEclate = default;
+    [SerializeField] private AudioSource _sonCoupDeFeu = default;
+
     public UITemps uiTemps;
     RaycastHit frappe;
     public List<GameObject> ballons = new List<GameObject>();
@@ -21,9 +23,8 @@ public class GestionFusil : MonoBehaviour
             Debug.Log("Tag détecté: " + frappe.collider.tag);
             if (frappe.collider.tag == "Ballon")
             {
-                Debug.Log("----------------------Atteint----------------");
                 frappe.collider.gameObject.SetActive(false);
-                _son.Play();
+                _sonBallonEclate.Play();
 
                 // Notifier le chronomètre
                 uiTemps.BallonEclate();
@@ -35,6 +36,7 @@ public class GestionFusil : MonoBehaviour
 
     public void Tirer()
     {
+        _sonCoupDeFeu.Play();
         boutton = true;
     }
 }
