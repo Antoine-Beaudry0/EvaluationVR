@@ -14,6 +14,8 @@ public class GestionFusil : MonoBehaviour
 
     void Update()
     {
+        Ray rayonTir = new Ray(raycastSpawnPoint.position, raycastSpawnPoint.forward);
+        Debug.DrawRay(rayonTir.origin, rayonTir.direction * 10f, Color.red, 1f);
         if (Physics.Raycast(raycastSpawnPoint.position, raycastSpawnPoint.forward, out frappe, 10f) && (boutton == true))
         {
             Debug.Log("Tag détecté: " + frappe.collider.tag);
@@ -31,7 +33,5 @@ public class GestionFusil : MonoBehaviour
     public void Tirer()
     {
         boutton = true;
-        Ray rayonTir = new Ray(raycastSpawnPoint.position, raycastSpawnPoint.forward);
-        Debug.DrawRay(rayonTir.origin, rayonTir.direction * 10f, Color.red, 1f);
     }
 }

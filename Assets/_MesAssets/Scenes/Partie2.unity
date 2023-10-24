@@ -2125,8 +2125,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748744763}
   m_LocalRotation: {x: -0, y: 0.24775209, z: -0, w: 0.9688235}
-  m_LocalPosition: {x: 14.825, y: 1.258, z: 5.174}
-  m_LocalScale: {x: 0.34766, y: 0.22606, z: 0.28904}
+  m_LocalPosition: {x: 21, y: 1.26, z: 5.104}
+  m_LocalScale: {x: 0.65060693, y: 0.22606, z: 0.28904}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1542747351}
@@ -2143,8 +2143,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.2697896}
+  m_Center: {x: 11.216312, y: 0.0000263191, z: 13.919971}
 --- !u!1 &840978283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,51 +2694,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ec2e3a5793d60e041b7716f035ef521e, type: 3}
   m_PrefabInstance: {fileID: 970886742}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &975788552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 975788553}
-  - component: {fileID: 975788554}
-  m_Layer: 0
-  m_Name: Collider (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &975788553
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975788552}
-  m_LocalRotation: {x: -0, y: 0.24775209, z: -0, w: 0.9688235}
-  m_LocalPosition: {x: 18.4, y: 1.258, z: 5.1038}
-  m_LocalScale: {x: 0.16411985, y: 0.22606, z: 0.1176942}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1542747351}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 28.689, z: 0}
---- !u!65 &975788554
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975788552}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &985818524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3622,51 +3577,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327748601}
   m_CullTransparentMesh: 1
---- !u!1 &1393291350
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1393291351}
-  - component: {fileID: 1393291352}
-  m_Layer: 0
-  m_Name: Collider (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1393291351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393291350}
-  m_LocalRotation: {x: -0, y: 0.24775209, z: -0, w: 0.9688235}
-  m_LocalPosition: {x: 17.4, y: 1.258, z: 5.0177}
-  m_LocalScale: {x: 0.34766, y: 0.22606, z: 0.056024794}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1542747351}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 28.689, z: 0}
---- !u!65 &1393291352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1393291350}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1504942511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3758,8 +3668,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 748744764}
-  - {fileID: 1393291351}
-  - {fileID: 975788553}
   m_Father: {fileID: 380369989}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -28.289, z: 0}
