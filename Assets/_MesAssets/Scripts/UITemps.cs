@@ -76,5 +76,22 @@ public class UITemps : MonoBehaviour
             AfficherTemps(recordText, tempsEcoule);
         }
     }
+    public void Recommencer()
+    {
+        tempsEcoule = 0f; // Réinitialise le temps écoulé
+        ballonsEclates = 0; // Réinitialise le nombre de ballons éclatés
+        estActif = true; // Active le chronomètre
+        chronometreDemarre = false; // Le chronomètre attendra le premier ballon éclaté pour démarrer
+
+        // Réactive tous les ballons
+        foreach (GameObject ballon in gestionFusil.ballons)
+        {
+            ballon.SetActive(true);
+        }
+
+        // Met à jour l'affichage du temps
+        AfficherTemps(tempsText, tempsEcoule);
+    }
+
 
 }
