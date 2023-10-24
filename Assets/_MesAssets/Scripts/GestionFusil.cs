@@ -9,7 +9,7 @@ public class GestionFusil : MonoBehaviour
     [SerializeField] private AudioSource _son = default;
     public UITemps uiTemps;
     RaycastHit frappe;
-
+    public List<GameObject> ballons = new List<GameObject>();
     bool boutton = false;
 
     void Update()
@@ -22,7 +22,7 @@ public class GestionFusil : MonoBehaviour
             if (frappe.collider.tag == "Ballon")
             {
                 Debug.Log("----------------------Atteint----------------");
-                Destroy(frappe.collider.gameObject);
+                frappe.collider.gameObject.SetActive(false);
                 _son.Play();
 
                 // Notifier le chronomètre

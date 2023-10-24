@@ -15,6 +15,7 @@ public class UITemps : MonoBehaviour
     private int ballonsEclates = 0; // Nombre de ballons éclatés
     private const int NOMBRE_BALLOONS = 18; // Nombre total de ballons à éclater
     private bool chronometreDemarre = false;
+    public GestionFusil gestionFusil;
 
 
     private void Start()
@@ -54,6 +55,14 @@ public class UITemps : MonoBehaviour
         {
             estActif = false;
             SauvegarderRecord();
+            ReactiverBallons();
+        }
+    }
+    private void ReactiverBallons()
+    {
+        foreach (GameObject ballon in gestionFusil.ballons)
+        {
+            ballon.SetActive(true);
         }
     }
 
