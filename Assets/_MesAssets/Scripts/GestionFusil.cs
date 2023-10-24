@@ -12,12 +12,7 @@ public class GestionFusil : MonoBehaviour
 
     bool boutton = false;
 
-    private void Start()
-    {
-        InvokeRepeating("CheckRaycast", 0f, 0.2f);
-    }
-
-    void CheckRaycast()
+    void Update()
     {
         if (Physics.Raycast(raycastSpawnPoint.position, raycastSpawnPoint.forward, out frappe, 10f) && (boutton == true))
         {
