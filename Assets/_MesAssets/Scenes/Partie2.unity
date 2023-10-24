@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 380369992}
   - component: {fileID: 380369991}
   - component: {fileID: 380369990}
+  - component: {fileID: 380369994}
   m_Layer: 0
   m_Name: === Fusil ==========
   m_TagString: Untagged
@@ -512,7 +513,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 380369992}
+        m_TargetAssemblyTypeName: GestionFusil, Assembly-CSharp
+        m_MethodName: Tirer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -615,14 +628,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380369988}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d083624f6a4ff4546aacbba6800ee49b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quantiteDegats: 10
-  distance: 100
-  cameraJoueur: {fileID: 0}
+  raycastSpawnPoint: {fileID: 2055556018}
+  _son: {fileID: 380369994}
+  raycastDistance: 10
 --- !u!114 &380369993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,8 +648,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf9ea8743aebe44b9fec1ae3beeba06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  porteeRaycast: 100
-  cameraJoueur: {fileID: 0}
+--- !u!82 &380369994
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380369988}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &415545470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9014170783705847997, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
@@ -3993,7 +4100,7 @@ GameObject:
   - component: {fileID: 6238125872141554507}
   m_Layer: 0
   m_Name: balloon.009
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4120,7 +4227,7 @@ GameObject:
   - component: {fileID: 9038839380015804241}
   m_Layer: 0
   m_Name: balloon.013
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4366,7 +4473,7 @@ GameObject:
   - component: {fileID: 6391868361902093321}
   m_Layer: 0
   m_Name: balloon.001
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4471,7 +4578,7 @@ GameObject:
   - component: {fileID: 2093093386197796168}
   m_Layer: 0
   m_Name: balloon.015
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4652,7 +4759,7 @@ GameObject:
   - component: {fileID: 8127109265813148188}
   m_Layer: 0
   m_Name: balloon.007
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4950,7 +5057,7 @@ GameObject:
   - component: {fileID: 8158107081303940867}
   m_Layer: 0
   m_Name: balloon.017
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5193,7 +5300,7 @@ GameObject:
   - component: {fileID: 6038634504643713099}
   m_Layer: 0
   m_Name: balloon.008
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5566,7 +5673,7 @@ GameObject:
   - component: {fileID: 5691731435395620187}
   m_Layer: 0
   m_Name: balloon.014
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5665,7 +5772,7 @@ GameObject:
   - component: {fileID: 9163076090007782970}
   m_Layer: 0
   m_Name: balloon.005
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5855,7 +5962,7 @@ GameObject:
   - component: {fileID: 6681545501984797775}
   m_Layer: 0
   m_Name: balloon.003
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5874,7 +5981,7 @@ GameObject:
   - component: {fileID: 6162643970278736480}
   m_Layer: 0
   m_Name: balloon.004
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6265,7 +6372,7 @@ GameObject:
   - component: {fileID: 7167563261532894726}
   m_Layer: 0
   m_Name: balloon.002
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6640,7 +6747,7 @@ GameObject:
   - component: {fileID: 7585443311311253165}
   m_Layer: 0
   m_Name: balloon.016
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6659,7 +6766,7 @@ GameObject:
   - component: {fileID: 6968124028682969503}
   m_Layer: 0
   m_Name: balloon
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7041,7 +7148,7 @@ GameObject:
   - component: {fileID: 8981403015385723712}
   m_Layer: 0
   m_Name: balloon.010
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7060,7 +7167,7 @@ GameObject:
   - component: {fileID: 7935792370000987632}
   m_Layer: 0
   m_Name: balloon.006
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7332,7 +7439,7 @@ GameObject:
   - component: {fileID: 8417245379276897232}
   m_Layer: 0
   m_Name: balloon.011
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7582,7 +7689,7 @@ GameObject:
   - component: {fileID: 8856732988294985528}
   m_Layer: 0
   m_Name: balloon.012
-  m_TagString: Untagged
+  m_TagString: Ballon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

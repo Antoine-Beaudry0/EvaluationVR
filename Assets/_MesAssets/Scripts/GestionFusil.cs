@@ -1,38 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.GraphicsBuffer;
-
 public class GestionFusil : MonoBehaviour
 {
+    [SerializeField] public Transform raycastSpawnPoint;
+    [SerializeField] private AudioSource _son = default;
 
-    public float domage = 10f;
-    public float range = 100f;
+    public float raycastDistance = 10f;
 
-    public Camera fpsCam;
-    [SerializeField] private InputActionAsset _actionAsset = default;
+    RaycastHit frappe;
 
-    void Update()
+    bool boutton = false;
+    public void Update()
     {
-
-        var fireAction = _actionAsset.FindAction("Fire");
-        fireAction.performed += Shoot;
-        fireAction.Enable();
-
+        Ray rayonTir = new Ray(raycastSpawnPoint.position, raycastSpawnPoint.forward);
+        if (Physics.Raycast(rayonTir, out frappe, raycastDistance) && (boutton == true))
+        {
+            Debug.Log("RayCast");
+            if (frappe.collider.CompareTag("Ballon"))
+            {
+                Debug.Log("Ca devrait fonctionner");
+                Destroy(frappe.collider.gameObject);
+                Debug.Log("+1");
+                _son.Play();
+            }
+            boutton = false;
+        }
     }
 
-    void Shoot(InputAction.CallbackContext obj)
+    public void Tirer()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.transform.name);
+        Debug.Log("JE TIRE");
+        boutton = true;
 
-            Cible cible = hit.transform.GetComponent<Cible>();
-            if (cible != null)
-            {
-                cible.RecevoirDegats(domage);
-            }
-        }
     }
 
 }
